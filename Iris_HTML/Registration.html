@@ -1,0 +1,116 @@
+<Doctype!HTML>
+<html>
+	<head>
+	<style>
+	body{
+		background-color:honeydew;
+		<!--background-image: url(FzoNL.jpg);-->
+ 		<!--background-repeat:repeat;-->
+	}
+	body {
+ 	background-image: url("showicon.png");
+ 	
+	}
+	h1{
+		color:forestgreen;
+		}
+	</style>
+		<h1 style align="center">Registration Form</h1>
+	</head>
+	<body>
+		<div style align="center">
+		<img src = "sign-up-button.gif"/><br/>
+		
+		
+		</br></br></br>
+		<label style = "margin-left = 150px">Enter Your Name:</label>
+			<input type = "text"
+					id = "my text"
+					placeholder = "Name" 
+					required
+					oninvalid="this.setCustomvalidity("*This field is mandatory")
+					/>
+		</br></br></br>
+		<label style = "margin-left = 150px">Enter Your Email:</label>
+			<input type = "email"
+					id = "my email"
+					placeholder = "" 
+					required
+					/>
+		
+		</br></br></br>
+		<label style = "margin-left = 150px">Enter Your Password:</label>
+			<input type = "password"
+					id = "my pass"
+					placeholder = "" 
+					/>
+		
+		</br></br></br>
+		<label style = "margin-left = 150px">Enter Your Password Again to confirm:</label>
+			<input type = "password"
+					id = "my pass"
+					placeholder = "" 
+					required/>
+		
+				</br></br></br>
+		<label style = "margin-left = 150px">Enter your age</label>
+		<input type = "age"
+			id = "my pass"
+			placeholder = "" 
+			max="2"
+			required/>
+				
+		
+		</br></br></br>
+		
+			<label>Gender</label>
+			<input type="radio" name="gender" value="male" checked> Male
+			<input type="radio" name="gender" value="female"> Female	
+			<input type="radio" name="gender" value="trans"> Transgender
+			<input type="radio" name="gender" value="Out of This Wrold"> Out of This World<br>
+			
+		</br></br></br>
+		
+		<label>Birthday:</label>
+  		<input type="date" name="bday">
+  		<input type="submit" value="Send">
+		
+		</br></br></br>
+		
+		<label style = "margin-left = 150px">Enter Your Mobile Number</label>
+			<input type = "text"
+					id = "my num"
+					placeholder = "" 
+					/>
+		</br></br></br>
+		
+		<div align="center">
+			<button type="button" onclick ="alert('Check your Messages for OTP')"style="margin-right:10px">Generate Otp</button>
+			
+		</div>
+		</br></br>
+		<label style = "margin-left = 150px">Verify Otp</label>
+			<input type = "password"
+					id = "my num"
+					placeholder = "" 
+					/>
+		</br></br></br>
+		
+		
+		<br><br>
+
+
+			<div align="center">
+				<button type="button"onclick ="alert('Have you checked all your details')" style="margin-left:100px">Register</button>
+			</div>
+		
+		
+		</div>
+
+
+	
+	</body>
+
+
+
+</html>

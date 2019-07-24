@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <style>
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+  }
+  body{
+		background-color:honeydew;
+	}
+    h1{
+		color:rgb(42, 185, 42);
+		}
+</style>
+    <img src="book-show.png" alt="book-show" class="center">
+</head>
+<html>
+       
+        <head>
+                <h1 style align="center" >Ticket Booking Portal</h1>    
+                
+        </head>
+    <body>
+        <form>
+    </br></br></br>
+            <div align="center">
+            <label style = "margin-left=150px">Enter Your Name:</label>
+			<input type = "text"
+					id = "my text"
+					placeholder = "Name" 
+					required
+                    />
+    </br></br></br>
+
+    <label style = "margin-left=150px">Date of Booking: </label>
+    <input type = "date"
+            id = "my text"
+            placeholder = "Name" 
+            required
+            min="20-7-2019" max="31-7-2019"
+            />
+</br></br></br>
+<label style = "margin-left=150px">Enter Movie Name: </label>
+    <select>
+        <option value="Kabir Singh">Kabir Singh</option>
+        <option value="SpiderMan">SpiderMan</option>
+        <option value="SuperMan">SuperMan</option>
+        <option value="Batman">Batman</option>
+      </select>
+    </br></br></br>
+    <label>Show Timings: </label>
+
+    <select>
+            <option value="10:30 A.M">10:30 A.M</option>
+            <option value="11:30 A.M">11:30 A.M</option>
+            <option value="01:30 P.M">01:30 P.M</option>
+            <option value="02:45 P.M">02:45 P.M</option>
+          </select>
+
+        </br></br></br>
+
+          <label> Class: </label>
+          <input type="radio" name="PClass" value="200" id="id1" onfocus="showPrice1(id)"> Platinum
+          <input type="radio" name="PClass" value="300" id="id2" onfocus="showPrice1(id)">Gold	
+          <input type="radio" name="PClass" value="400" id="id3" onfocus="showPrice1(id)"> Exclusive
+          <input type="radio" name="PClass" value="500" id="id4"onfocus="showPrice1(id)"> Club<br>
+        </br></br>
+        <label style = "margin-left=150px">Price </label>
+        <input type = "text"
+                id = "id5"
+                placeholder = "" 
+                
+                />
+            </br></br></br>
+                <label style = "margin-left=150px">Number of Tickets: </label>
+                <input type = "text"
+                id = "id6"
+                placeholder = "" 
+                />
+            </br></br></br>
+                <label style = "margin-left=150px">Total Price : </label>
+                <input type = "text"
+                id = "id7"
+                placeholder = "" 
+                />
+            </br></br></br>
+        <script>
+            function showPrice1(id){
+                    document.getElementById("id5").value=document.getElementById(id).value;  
+            }
+            function calcPrice(id){
+                var a= document.getElementById("id6").value;
+                var total_price=a;
+                document.getElementById("id7").value=document.getElementById(total_price).value;  
+
+            }
+        </script>
+
+        </form>
+    </body>
+</html>

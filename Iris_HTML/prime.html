@@ -1,0 +1,53 @@
+
+<!Doctype html>
+<html>
+
+	<head>
+	<title>
+		Prime numbers
+	</title>
+	<script>
+	function primeNum(){
+	
+	var n = document.getElementById("mynum").value;
+	
+	
+	document.getElementById("demo").innerHTML = n;
+	
+	if(n>100){
+		alert("number cant be greater than 100");
+		}
+	else{
+		for(i =2;i<=n;i++){
+			flag = 0;
+			for(j=2;j<=i/2;j++){
+				if(i%j==0){
+					flag=1;
+					}
+				}
+			if(flag == 0)
+			document.write(i);
+			//document.getElementById("demo").innerHTML = i;
+		}
+	}
+}
+
+	</script>	
+	</head>
+	
+	<body>
+
+	<label>
+	Enter the number:
+	</label>
+	<input type = "number"
+	id = "mynum"
+	placeholder = "" 
+	/>
+	<p id = "demo"></p>
+
+	<button type="button" onclick = "primeNum()" style="margin-left:100px">Generate</button>
+	
+	
+	</body>
+</html>
